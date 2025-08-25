@@ -5,6 +5,7 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   scrollbar-width: none;
+  overflow-x: hidden;
 
 }
 
@@ -23,9 +24,8 @@ nav {
   margin: 2rem auto;
   align-items: center;
   position: relative;
-  width: 100%; /* antes estava 100vw */
-  max-width: 1200px; /* opcional pra centralizar */
-}
+  width: 100vw; /* antes estava 100vw */
+ }
 
 ul.menu-desktop,
 ul.mobile-menu {
