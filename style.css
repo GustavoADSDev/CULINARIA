@@ -1,0 +1,634 @@
+/* ------------------- RESET ------------------- */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scrollbar-width: none;
+
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+ 
+}
+
+
+/* ------------------- NAV ------------------- */
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem auto;
+  align-items: center;
+  position: relative;
+  width: 100%; /* antes estava 100vw */
+  max-width: 1200px; /* opcional pra centralizar */
+}
+
+ul.menu-desktop,
+ul.mobile-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+ul.menu-desktop li a,
+ul.mobile-menu li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+ul.menu-desktop li a:hover,
+ul.mobile-menu li a:hover {
+  color: #FD740B;
+}
+
+span {
+  color: #FD740B;
+}
+
+.bi-bag-fill {
+  color: #FD740B;
+  font-size: 24px;
+}
+
+.bi-list {
+  display: none;
+  cursor: pointer;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+/* ------------------- MAIN ------------------- */
+main .conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 7rem auto;
+  padding: 0 2rem;
+  max-width: 1200px;
+}
+
+.texto h1 {
+  width: 20rem;
+  margin-bottom: 1.3rem;
+}
+
+.texto p {
+  width: 20rem;
+  text-align: justify;
+  margin-bottom: 2rem;
+}
+
+.texto button {
+  border: none;
+  background-color: #FD740B;
+  color: white;
+  padding: 7px;
+  margin-top: 1rem;
+  border-radius: .5rem;
+  width: 6rem;
+  font-size: 1.1rem;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* ------------------- ESPECIAL ------------------- */
+.conteudo {
+  height: 70vh;
+}
+
+.especial {
+  text-align: center;
+  margin: auto;
+}
+
+.especial img {
+  margin-top: 3rem;
+  width: 400px;
+  height: 250px;
+}
+
+.gerais {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.especial-1 p, 
+.especial-2 p, 
+.especial-3 p {
+  width: 350px;
+  text-align: center;
+  margin: auto;
+  transition: all 0.3s ease;
+}
+
+.especial-1, 
+.especial-2, 
+.especial-3 {
+  gap: 2px;
+  transition: all 0.3s ease;
+}
+
+.especial-1:hover,
+.especial-2:hover,
+.especial-3:hover {
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  transform: translateY(-5px);
+  border-radius: 40px;
+}
+
+/* ------------------- PREÇO ------------------- */
+.preco {
+  margin-top: 1rem;
+}
+
+.preco p {
+  font-weight: bolder;
+}
+
+.preco button {
+  border: none;
+  background-color: #FD740B;
+  color: white;
+  margin: 20px;
+  padding: .4rem;
+  border-radius: .5rem;
+  font-size: 1.2rem;
+}
+
+/* ------------------- SESSÃO 3 ------------------- */
+.sessao-3 {
+  margin-top: 10rem;
+}
+
+.sessao-3 .conteudo {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+/* ------------------- CARDS ------------------- */
+.cards {
+  
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  
+}
+
+.card1, 
+.card2,
+.card3{ 
+  background: #fff;
+  border-radius: 20px;
+  padding: 20px 20px 0 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card1 h1, .card2 h1, .card3 h1 {
+  font-size: 16px;
+  margin-top: 30px;
+}
+.card1 p, .card2 p, .card3 p{
+  width: 300px;
+  height: 200px;
+}
+
+.card1 a, .card2 a, .card3 a {
+  display: block;
+  margin-top: 2rem;
+  color: #FD740B;
+  text-decoration: none;
+}
+
+/* Ícones */
+.bi-cup-hot {
+  background-color:#4CAF50; 
+  color: white; 
+  padding: 10px 15px; 
+  border-radius: 20px;
+  font-size: 30px;
+}
+
+.bi-truck {
+  background-color:#FD365B; 
+  color: white; 
+  padding: 10px 15px; 
+  border-radius: 20px;
+  font-size: 25px;
+}
+
+.bi-star-fill {
+  background-color:#1550D4; 
+  color: white; 
+  padding: 10px 15px; 
+  border-radius: 20px;
+  font-size: 30px;
+}
+
+
+.conteudoSesao4{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 10rem;
+  gap: 10rem;
+
+}
+.texto h1{
+  width: 25vw;
+}
+.texto p{
+  width: 29vw;
+}
+.img{
+  width: 500px;
+  
+}
+.check1, .check2, .check3{
+  display: block;
+  
+
+}
+.icon p{
+  font-weight: 900;
+  margin-left: 10px;
+}
+.icon1, .icon2, .icon3{
+  display: flex;
+}
+.check1{
+  color: #4CAF50;
+}
+.check2{
+  color: #FD365B;
+}
+.check3{
+  color: blue;
+}
+
+.testemunho h1{
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+.testemunho p{
+  text-align: center;
+  margin-top: 3rem;
+  margin: auto;
+  width: 32%;
+}
+.carousel {
+  width: 650px;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.slide {
+  display: none;
+  padding: 20px;
+  border: 2px solid #ff7f50;
+  border-radius: 20px;
+  background: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.slide.active {
+  display: block;
+}
+
+.slide img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin: 10px 0;
+  justify-content: center; 
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.slide h3 {
+  margin: 5px 0;
+}
+
+.dots {
+  margin-top: 10px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 4px;
+  display: inline-block;
+  background-color: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #ff7f50;
+}
+footer{
+  background-color: #E6E4E1;
+  justify-content: space-around;
+  display: flex;
+  padding-top: 3rem;
+
+}
+.parte1 p{
+width: 25rem;
+margin: 0;
+}
+
+.parte1 h1, .parte2 h1, .parte3 h1, .parte4 h1{
+  padding-bottom: 1.2rem;
+  
+}
+footer li{
+  list-style: none;
+  gap: 20px;
+  
+}
+
+
+/* ------------------- MOBILE ------------------- */
+@media screen and (max-width: 900px) {
+  nav {
+    margin: 0;
+    background-color: #FD740B;
+    padding: 10px;
+    flex-wrap: wrap;
+  }
+
+  .menu-desktop {
+    display: none !important;
+    width: 100%;
+  }
+
+  .bi-bag-fill {
+    display: none;
+  }
+
+  .bi-list {
+    display: block;
+    font-size: 2.5rem;
+    color: white;
+  }
+
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    z-index: 10;
+  }
+
+  .mobile-menu li {
+    margin: 10px 0;
+  }
+
+  .mobile-menu li a {
+    color: #333;
+  }
+
+  header h1 span {
+    color: white;
+  }
+
+  main .conteudo {
+    padding: 0;
+    margin: 0;
+  }
+
+  .imagem {
+    order: 1;
+    align-items: center;
+    justify-content: center;
+  }
+  .conteudo .texto h1{
+   justify-content: center;
+   text-align: center;
+   width: 100%;
+  }
+  .texto {
+    order: 2;
+   
+  }
+
+  .none {
+    display: none;
+  }
+
+  .conteudo button {
+    text-align: center;
+    margin: auto;
+    display: grid;
+    font-size: 1.3rem;
+    width: 7rem;
+  }
+
+ .gerais {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+
+  .texto1 {
+     margin-top: 20rem; }
+  .texto2 {
+     margin-top: 1rem; }
+
+  .preco {
+    font-size: x-large;
+  }
+
+  .preco button {
+    font-size: medium;
+  }
+
+  .especial {
+    background-color: #f7f7f7;
+    border-radius: 2%;
+  }
+ .texto{
+  font-size: px;
+ }
+ .texto1 h1{
+  font-size: px;
+ }
+ .texto2{
+  font-size: px;
+ }
+ .gerais{
+  font-size: px;
+ }
+ .cards h1, p{
+  font-size: px;
+ }
+  .especial-1, 
+  .especial-2, 
+  .especial-3 {
+    margin-top: 3rem;
+    background-color: white;
+    border-radius: 30px;
+  }
+  .sessao-3 .texto{
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+  }
+  .sessao-3 .texto h1{
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+  }
+  .sessao-3 .texto p{
+    text-align: center;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  .cards {
+    padding-top: 25rem;
+    width: 400px;
+    height: 430px;
+    display: block;
+    justify-content: center;
+    margin: auto;
+   align-items: center;
+  }
+  .card1 p, .card2 p, .card3 p{
+  width: 300px;
+  height: 300px;
+  
+ 
+}
+.card1, .card2, .card3 {
+  background: #fff;
+  border-radius: 20px;
+  padding: 20px 20px 0 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  
+ 
+}
+.cards h1{
+  margin-bottom: 10px;
+}
+
+  .conteudoSesao4 {
+    margin-top: 90rem;
+    flex-direction: column; 
+    
+  }
+
+  .img {
+    order: -1; 
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+  }
+
+  .secao4 .texto {
+    order: 2; 
+    text-align: center;
+  }
+  .texto h1{
+    width: 100vw;
+   text-align: center;
+    margin: auto;
+  }
+  .texto p{
+    width: 100vw;
+    text-align: center;
+    margin: auto;
+  
+  }
+  .secao4 h1{
+    margin-top: -145px;
+    margin-bottom: 15px;
+    text-align: justify;
+
+  }
+  .secao4 p{
+  margin-bottom: 25px;
+  }
+.icon2{
+
+ width: 30rem;
+ margin: auto;
+ margin-top: 2rem;
+ margin-bottom: 2rem;
+
+}
+.icon3, .icon1{
+margin-left: 10px;
+}
+.icon p{
+  font-weight: 900;
+  text-align: justify;
+  justify-content: center;
+  margin: auto;
+
+  
+  
+}
+
+.testemunho h1{
+margin-top: 120px;
+}
+.testemunho p{
+ width: 90%;
+}
+.carousel {
+  width: 90vw;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: 2rem;
+}
+footer{
+  background-color: #E6E4E1;
+  justify-content: space-around;
+  display: block;
+  padding-top: 3rem;
+  padding-left: .4rem;
+  margin: auto;
+ 
+
+}
+.parte1 h1, .parte2 h1, .parte3 h1, .parte4 h1{
+ 
+  padding-top: 1rem;
+  
+  
+}
+}

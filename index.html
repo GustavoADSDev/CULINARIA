@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Foodman</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+  <!-- Fonte -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1><span>Food</span>man</h1>
+
+      <!-- Menu Desktop -->
+      <ul class="menu-desktop">
+        <li><a href="#">Home</a></li>
+        <li><a href="#gerais">Special</a></li>
+        <li><a href="#chefe">Chef</a></li>
+        <li><a href="#clients">Clients</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+
+      <i class="bi bi-bag-fill"></i>
+
+      <!-- Botão menu mobile -->
+      <i class="bi bi-list" id="menu-toggle"></i>
+
+      <!-- Menu Mobile -->
+      <ul id="mobile-menu" class="mobile-menu hidden">
+        <li><a href="#">Home</a></li>
+        <li><a href="#gerais">Special</a></li>
+        <li><a href="#chefe">Chef</a></li>
+        <li><a href="#clients">Clients</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Seção Principal -->
+    <div class="conteudo">
+      <div class="texto">
+        <h1>Conheça, coma & aproveite o <span>verdadeiro sabor</span>.</h1>
+        <p class="none">Descubra a verdadeira essência do deleite culinário ao conhecer, comer e guardar o sabor autêntico que define a nossa paixão pela comida.</p>
+        <button>Começar</button>
+      </div>
+      <div class="imagem">
+        <img src="img/principal-removebg-preview.png" alt="Imagem principal">
+      </div>
+    </div>
+
+    <!-- Seção Especial -->
+    <div class="especial">
+      <h1 class="texto1">Especial do dia</h1>
+      <p class="texto2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, quo.</p>
+      
+      <div class="gerais" id="gerais">
+        <!-- Especial 1 -->
+        <div class="especial-1">
+          <img src="img/especial-1.png" alt="">
+          <h1>Lorem.</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <div class="preco">
+            <p>R$ 12,50
+              <button>Add to cart</button>
+            </p>
+          </div>
+        </div>
+
+        <!-- Especial 2 -->
+        <div class="especial-2">
+          <img src="img/especial-2.png" alt="">
+          <h1>Lorem.</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <div class="preco">
+            <p>R$ 12,50
+              <button>Add to cart</button>
+            </p>
+          </div>
+        </div>
+
+        <!-- Especial 3 -->
+        <div class="especial-3">
+          <img src="img/especial-3.png" alt="">
+          <h1>Lorem.</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <div class="preco">
+            <p>R$ 12,50
+              <button>Add to cart</button>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Seção 3 -->
+    <div class="sessao-3">
+      <div class="conteudo">
+        <div class="imagem">
+          <img src="img/foto-1.png" alt="Imagem principal">
+        </div>
+        <div class="texto">
+          <h1>Lorem ipsum dolor sit.</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <button>Explorar</button>
+        </div>
+      </div>
+    </div>
+ 
+    <!-- Cards -->
+    <div class="cards">
+      <div class="card1">
+        <i class="bi bi-cup-hot"></i>
+        <h1>Lorem ipsum dolor</h1>
+        <p>Seamlessly place your food orders online with just a few clicks. Enjoy convenience and efficiency as you select from our diverse menu of delectable dishes.
+          <a href="#">ver mais <i class="bi bi-arrow-right"></i></a>
+        </p>
+      </div>
+
+      <div class="card2">
+        <i class="bi bi-truck"></i>
+        <h1>Lorem ipsum dolor</h1>
+        <p>Customize your dining experience by choosing from a tantalizing array of options. For savory, sweet, or in between craving, find the perfect meal to satisfy your appetite.
+          <a href="#">ver mais <i class="bi bi-arrow-right"></i></a>
+        </p> 
+      </div>
+
+      <div class="card3">
+        <i class="bi bi-star-fill"></i>
+        <h1>Lorem ipsum dolor</h1>
+        <p>Sit back, relax, and savor the flavors as your meticulously prepared meal arrives. Delight in the deliciousness of every bite, knowing that your satisfaction is our top priority.
+          <a href="#">ver mais <i class="bi bi-arrow-right"></i></a>
+        </p>
+      </div>
+    </div>
+
+
+     <!---Seção 4-->
+     <div class="secao4" id="chefe">
+       <div class="conteudoSesao4">
+         <div class="texto">
+           <h1>cooked By the Best Chefs in The wolrld</h1>
+           <p>Experience culinary excellence crafted by master chefs from around the globe. Our team of culinary virtuosos brings together expertise, innovation, and passion to create unforgettable dining experiences that redefine gastronomy.</p>
+           <div class="icon">
+           <div class="icon1">
+           
+            <i class="bi bi-check2-square check1"></i><p>Savour culinary brilliance from master chefes</p>
+          </div>
+
+           <div class="icon2">
+            <i class="bi bi-check2-square check2"></i><p>Experiencia innovative creations with attention to detail</p>
+          </div>
+
+          
+            <div class="icon3">
+              <i class="bi bi-check2-square check3"></i><p>Enjoy dishes crafted an unwavering passion for perfection</p>
+            </div>
+          
+     </div>
+         </div>
+         <div class="img">
+          <img src="img/sessao4.png" alt="">
+         </div>
+        
+         </div>
+       </div>
+        
+
+       <div class="testemunho">
+
+        <h1>what Our Customers are saying</h1>
+        <p>discover firsthand experiences and testimonials from our valued patrons, Explore the feedback abd reviews that showcase our commitment to quality, service, and custimer satisfaction</p>
+       </div>
+
+         <div class="carousel" id="clients">
+    <div class="slide active">
+      <p>"FoodMan's culinary expertise never fails to impress! Every dish is a masterpiece, bursting with flavor and freshness."</p>
+      <img src="img/rosto 1.png" alt="Foto cliente">
+      <h3>David Lee</h3>
+      <p>Business Executive</p>
+    </div>
+
+    <div class="slide">
+      <p>"Ótimo atendimento e pratos deliciosos. Sempre recomendo para amigos e colegas!"</p>
+      <img src="img/rosto 2.png" alt="Foto cliente">
+      <h3>Ana Silva</h3>
+      <p>Empresária</p>
+    </div>
+
+    <div class="slide">
+      <p>"Uma experiência única, tudo fresquinho e cheio de sabor."</p> with flavor and freshness."
+      <img src="img/rosto 3.png" alt="Foto cliente">
+      <h3>João Pereira</h3>
+      <p>Professor</p>
+    </div>
+
+    <div class="dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </div>
+
+  <footer>
+    <div class="parte1">
+      <h1><span>Food</span>man</h1>
+      <p>Embark on a gastronomic journey with FoodMan, where every bite tells a story and every dish is crafted to perfection</p>
+    </div>
+
+    <div class="parte2">
+      <h1>product</h1>
+      <li>
+        <ul>Menu</ul>
+        <ul>Specials</ul>
+        <ul>Catering Options</ul>
+        <ul>Seasonal Offerings</ul>
+      </li>
+     
+    </div>
+
+    <div class="parte3">
+      <h1>information</h1>
+      <li>
+        <ul>About</ul>
+        <ul>Contact us</ul>
+        <ul>Nutrition Information</ul>
+        <ul>Allergen Information</ul>
+      </li>
+
+    </div>
+
+    <div class="parte4">
+      <h1>company</h1>
+      <li>
+        <ul>Our Story</ul>
+        <ul>Careeers</ul>
+        <ul>Terms of Service</ul>
+        <ul>Privacy Policy</ul>
+
+      </li>
+    
+    </div>
+  </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
