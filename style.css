@@ -573,8 +573,9 @@ footer li{
 }
 
   .conteudoSesao4 {
-    margin-top: 5rem;
-    flex-direction: column; 
+  flex-direction: column; /* já está assim */
+  gap: 1rem; /* reduz o espaço entre texto e imagem */
+  margin-top: 3rem; /* diminui do que está agora */
     
   }
 
@@ -591,6 +592,9 @@ footer li{
   width: 100%;
   margin-top: 0;      /* remove aquele -145px que some com ele */
   text-align: center; /* opcional */
+    margin-top: 0;       /* remove espaço extra acima */
+  margin-bottom: 1rem; /* distância menor para a imagem */
+  text-align: center;
 }
   .secao4 .texto {
     order: 2; 
@@ -599,7 +603,7 @@ footer li{
   .texto h1{
     width: 100vw;
    text-align: center;
-    margin: auto;
+  
   }
   .texto p{
     width: 100vw;
@@ -608,13 +612,15 @@ footer li{
   
   }
   .secao4 h1{
-    margin-top: -145px;
-    margin-bottom: 15px;
+  
+    margin-bottom: 5px;
     text-align: justify;
 
   }
   .secao4 p{
   margin-bottom: 25px;
+  width: 90vw;
+  text-align: justify;
   }
   .icon{
     width: 90%;
