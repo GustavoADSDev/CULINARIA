@@ -22,6 +22,7 @@ nav {
   display: flex;
   justify-content: space-between;
   margin: 2rem auto;
+  padding: 2rem 5rem 0 5rem;
   align-items: center;
   position: relative;
   width: 100vw; /* antes estava 100vw */
@@ -107,7 +108,7 @@ main .conteudo {
 
 /* ------------------- ESPECIAL ------------------- */
 .conteudo {
-  height: 70vh;
+  height: auto;
 }
 
 .especial {
@@ -187,11 +188,14 @@ main .conteudo {
 /* ------------------- CARDS ------------------- */
 .cards {
   
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
+     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    padding-top: 2rem; /* substitua o 25rem do mobile */
+    margin: auto;
+    height: auto; /* importante */
   
 }
 
@@ -210,7 +214,7 @@ main .conteudo {
 }
 .card1 p, .card2 p, .card3 p{
   width: 300px;
-  height: 200px;
+  height: auto;
 }
 
 .card1 a, .card2 a, .card3 a {
@@ -269,12 +273,32 @@ main .conteudo {
   
 
 }
+.check1 {
+  color: #4CAF50; /* verde */
+}
+
+.check2 {
+  color: #FD365B; /* rosa/vermelho */
+}
+
+.check3 {
+  color: black; /* ou azul, se preferir */
+}
+
 .icon p{
   font-weight: 900;
   margin-left: 10px;
 }
 .icon1, .icon2, .icon3{
   display: flex;
+  align-items: center; /* alinha ícone e texto verticalmente */
+  gap: 10px; /* espaço entre ícone e texto */
+}
+.icon {
+  display: flex;
+  flex-direction: column; /* empilha os itens verticalmente */
+  gap: 10px; /* espaçamento entre cada item */
+  margin-top: 2rem;
 }
 .check1{
   color: #4CAF50;
@@ -451,6 +475,7 @@ footer li{
     display: grid;
     font-size: 1.3rem;
     width: 7rem;
+    margin-bottom: 2rem;
   }
 
  .gerais {
@@ -462,7 +487,8 @@ footer li{
 
 
   .texto1 {
-     margin-top: 20rem; }
+     margin-top: 10rem; 
+    }
   .texto2 {
      margin-top: 1rem; }
 
@@ -496,7 +522,7 @@ footer li{
   .especial-1, 
   .especial-2, 
   .especial-3 {
-    margin-top: 3rem;
+    margin-top: 2rem;
     background-color: white;
     border-radius: 30px;
   }
@@ -509,6 +535,7 @@ footer li{
     text-align: center;
     margin: auto;
     margin-top: 10px;
+   
   }
   .sessao-3 .texto p{
     text-align: center;
@@ -516,17 +543,17 @@ footer li{
     margin-bottom: 10px;
   }
   .cards {
-    padding-top: 25rem;
-    width: 400px;
-    height: 430px;
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
     justify-content: center;
     margin: auto;
-   align-items: center;
+    width: 90%;
+    height: auto; /* altura automática */
   }
   .card1 p, .card2 p, .card3 p{
   width: 300px;
-  height: 300px;
+  height: auto;
   
  
 }
@@ -536,6 +563,8 @@ footer li{
   padding: 20px 20px 0 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   margin-top: 20px;
+  width: 100%;
+  height: auto;
   
  
 }
@@ -544,7 +573,7 @@ footer li{
 }
 
   .conteudoSesao4 {
-    margin-top: 90rem;
+    margin-top: 5rem;
     flex-direction: column; 
     
   }
@@ -554,9 +583,15 @@ footer li{
     justify-content: center;
     align-items: center;
     margin: auto;
-
+    width: auto;
+    
   }
-
+.secao4 .texto h1 {
+  max-width: 600px;   /* ou como preferir */
+  width: 100%;
+  margin-top: 0;      /* remove aquele -145px que some com ele */
+  text-align: center; /* opcional */
+}
   .secao4 .texto {
     order: 2; 
     text-align: center;
@@ -581,10 +616,13 @@ footer li{
   .secao4 p{
   margin-bottom: 25px;
   }
+  .icon{
+    width: 90%;
+  }
 .icon2{
 
  width: 30rem;
- margin: auto;
+ margin: .6rem;
  margin-top: 2rem;
  margin-bottom: 2rem;
 
@@ -597,8 +635,17 @@ margin-left: 10px;
   text-align: justify;
   justify-content: center;
   margin: auto;
-
   
+ 
+  
+}
+.icon2 p{
+  font-weight: 900;
+  text-align: justify;
+  justify-content: center;
+  margin: -2px;
+  
+ 
   
 }
 
