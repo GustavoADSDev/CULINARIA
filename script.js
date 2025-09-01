@@ -1,9 +1,16 @@
-   const toggle = document.getElementById('menu-toggle');
-      const menu = document.getElementById('mobile-menu');
+  const toggle = document.getElementById('menu-toggle');
+const menu = document.getElementById('mobile-menu');
 
-      toggle.addEventListener('click', () => {
-        menu.classList.toggle('show');
-      });
+toggle.addEventListener('click', () => {
+  menu.classList.toggle('show');
+});
+
+// Adicione este trecho para fechar o menu ao clicar em um link
+document.querySelectorAll('#mobile-menu a').forEach(item => {
+  item.addEventListener('click', () => {
+    menu.classList.remove('show');
+  });
+});
        let currentIndex = 0;
     const slides = document.querySelectorAll(".slide");
     const dots = document.querySelectorAll(".dot");

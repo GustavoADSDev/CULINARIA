@@ -81,7 +81,7 @@ main .conteudo {
   flex-wrap: wrap;
   gap: 1rem;
   margin: 7rem auto;
-  padding: 0 2rem;
+  padding: 3.7rem 2rem;
   max-width: 1200px;
 }
 
@@ -404,11 +404,18 @@ footer li{
 /* ------------------- MOBILE ------------------- */
 @media screen and (max-width: 900px) {
  nav {
-    margin: 0;
-    background-color: #FD740B;
-    padding: 10px;
-    flex-wrap: wrap;
-    z-index: 1000;
+    display: flex;
+  justify-content: space-between;
+  margin-bottom: 0 auto;
+  padding: 0rem 1rem;
+  align-items: center;
+  /* position: relative;  <-- Remova esta linha */
+  position: fixed; /* Adicione esta linha para fixar a barra de navegação */
+  top: 0; /* Coloca a barra de navegação no topo */
+  left: 0; /* Alinha a barra de navegação à esquerda */
+  width: 100%; /* Garante que ela ocupe a largura total */
+  z-index: 1000;
+  background-color: #FD740B;
   }
 
   .menu-desktop {
@@ -462,7 +469,7 @@ footer li{
 
   main .conteudo {
     padding:0;
-    margin: 0;
+    margin-top: 2rem;
   }
 
   .imagem {
@@ -628,8 +635,8 @@ footer li{
   }
   .secao4 h1{
   
-    margin-bottom: 5px;
-    text-align: justify;
+    margin-bottom: 15px;
+  
 
   }
   .secao4 p{
