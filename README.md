@@ -13,6 +13,8 @@ Design limpo e atrativo, priorizando a experiência do usuário
 
 Este projeto reforça minha dedicação ao desenvolvimento web e à criação de interfaces funcionais e bonitas.
 
-💡 Confira o site e veja como a tecnologia pode valorizar a apresentação de um negócio gastronômico!
+💡 Confira o site 
+
+https://culinaria-two.vercel.app/
 
 #DesenvolvimentoWeb #FrontEnd #ProjetosPessoais #HTML #CSS #UX #DesignDigital
