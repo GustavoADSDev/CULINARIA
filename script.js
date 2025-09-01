@@ -2,7 +2,7 @@
       const menu = document.getElementById('mobile-menu');
 
       toggle.addEventListener('click', () => {
-        menu.classList.toggle('hidden');
+        menu.classList.toggle('show');
       });
        let currentIndex = 0;
     const slides = document.querySelectorAll(".slide");
