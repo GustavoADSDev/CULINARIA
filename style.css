@@ -27,7 +27,7 @@ nav {
   position: relative; /* ou fixed se quiser que fique sempre no topo */
   width: 100%;
   z-index: 1000; /* garante que fique acima do conteúdo */
-  background-color: white; /* opcional, para não ficar transparente */
+  background-color: rgb(255, 255, 255); /* opcional, para não ficar transparente */
 }
 
 ul.menu-desktop,
@@ -403,7 +403,7 @@ footer li{
 
 /* ------------------- MOBILE ------------------- */
 @media screen and (max-width: 900px) {
-  nav {
+ nav {
     margin: 0;
     background-color: #FD740B;
     padding: 10px;
@@ -426,35 +426,29 @@ footer li{
     color: white;
   }
   
-    
-#mobile-menu.show {
-  display: flex;
-}
-  .mobile-menu {
+  /* Mantém o menu escondido por padrão */
+  #mobile-menu.show {
     display: flex;
+  }
+  
+  .mobile-menu {
+    display: none;
     flex-direction: column;
-    background-color: white;
-    position: absolute;
-    top: 60px;
+    background-color: rgb(255, 255, 255);
+    /* Estas são as novas propriedades de posicionamento */
+    position: fixed; /* Fixa o menu na tela, ignorando o scroll */
+    top: 60px; /* Posição a partir do topo. Ajuste se a altura do seu header for diferente. */
     right: 10px;
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-     z-index: 2000; /* <-- adicione isto */
-    
+    z-index: 9999; /* Garante que o menu fique por cima de todos os outros elementos */
   }
 
   .mobile-menu li {
     margin: 10px 0;
   }
  
-/* Oculta o menu mobile por padrão para o desktop */
-ul.mobile-menu {
-  display: none;
-}
-
-
-
   .mobile-menu li a {
     color: #333;
   }
@@ -462,9 +456,12 @@ ul.mobile-menu {
   header h1 span {
     color: white;
   }
+  header h1 span {
+    color: white;
+  }
 
   main .conteudo {
-    padding: 0;
+    padding:0;
     margin: 0;
   }
 
